@@ -1,5 +1,4 @@
-
-import { Box, IconButton, Typography} from "@mui/material";
+import { Typography} from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 const User = ({name}) => {
     return (

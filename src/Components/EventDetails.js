@@ -29,9 +29,9 @@ const EventDetails=()=> {
           },
         }
       );
-      const data=await response.json();
-      
+      const data=await response.json();      
       setEventData(data.data)
+      
       
   }
   const usersRegistered=async ()=>{
@@ -53,12 +53,10 @@ const EventDetails=()=> {
     const check = data.users.find((user) => user._id == userId);
     if(check)
     {
-      
+
       setFlag(true)
     }
-  
   }
-  console.log("users",users)
   const handleCloseSnackbar = (event, reason) => {
     if (reason === "clickaway") {
       return;
@@ -71,7 +69,7 @@ const EventDetails=()=> {
     usersRegistered();
 
   },[eventId])
-  
+
   const registerForEvent=async()=>{
   
     const response = await fetch(
@@ -85,6 +83,9 @@ const EventDetails=()=> {
         body: JSON.stringify({
           eventId: eventData.id,
           eventName: eventData.name.text,
+          summary:eventData.summary,
+          imgUrl:eventData.logo.original.url,
+
         }),
       }
     );
@@ -92,6 +93,11 @@ const EventDetails=()=> {
       setIsSnackbarOpen(true);
     }
     const data=response.json();
+    if(response.ok)
+    {
+      setFlag(true)
+    }
+
     
   }
   return (
@@ -160,7 +166,7 @@ const EventDetails=()=> {
                   Interest
                 </Typography>
                 <Stack direction='row' spacing={1}>
-                  <Chip color='primary' label='Music' size='small' />
+                  <Chip color='primary' label={eventData.interest} size='small' />
                 </Stack>
               </Box>
 
@@ -190,7 +196,9 @@ const EventDetails=()=> {
           <Box
             height='100%'
             padding='3rem'
-            border='1px solid #ccc' // Add a border to the RegisteredUsers box
+            feature/register
+            border='1px solid #ccc' 
+
           >
             <RegisteredUsers users={users} />
           </Box>

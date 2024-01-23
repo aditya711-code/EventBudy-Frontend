@@ -39,11 +39,11 @@ const Navbar = () => {
   };
 
   const handleLogoutClick = () => {
-    // Implement your logout logic here
-    // For example, clear the authentication token
-    localStorage.removeItem("token");
 
-    // Redirect to the login page
+    
+    localStorage.removeItem("token");
+    localStorage.removeItem("userId")
+
     navigate("/login");
     handleClose();
   };
