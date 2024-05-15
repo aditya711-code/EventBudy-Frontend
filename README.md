@@ -1,7 +1,8 @@
 Events Page
-![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/ff78c23d-74f6-4b84-9115-008c9775f7d1)
+![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/208a05bb-cf59-4d6a-8a11-bb203d886ff0)
 Profile Page
 ![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/b71b1f28-0942-4799-a53e-682e05be1e73)
 Register for Events Page
-![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/c010076c-e67a-4a9e-8f2f-1052ab03b9a3)
+![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/ae2a3adf-ecd8-4aff-aa48-ebb37d25767c)
+
 
