@@ -1,5 +1,6 @@
 Events Page
-![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/208a05bb-cf59-4d6a-8a11-bb203d886ff0)
+![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/93d6c3e1-0dee-472e-8b42-09e8339d9788)
+
 Profile Page
 ![image](https://github.com/aditya711-code/EventBudy-Frontend/assets/83772267/b71b1f28-0942-4799-a53e-682e05be1e73)
 Register for Events Page
